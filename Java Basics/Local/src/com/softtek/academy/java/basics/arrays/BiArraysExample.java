@@ -12,7 +12,7 @@ public class BiArraysExample {
 		for (int x = 0; x < twoDimensionDeclared.length; x++) {
 			for (int y = 0; y < twoDimensionDeclared[x].length; x++) {
 				
-				System.out.print();
+				System.out.println();
 			}
 			
 		}

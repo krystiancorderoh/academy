@@ -8,7 +8,7 @@ public class LogicalOperators {
 		// TODO Auto-generated method stub
 		int n= 10;
 		
-		Scanner sc = new Scanner(Sistem.in);
+		Scanner sc = new Scanner(System.in);
 		
 		System.out.println("First: ");
 		

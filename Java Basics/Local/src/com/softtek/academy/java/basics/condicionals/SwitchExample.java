@@ -8,7 +8,7 @@ public class SwitchExample {
 		
 		if(age <18) {
 			if(age <15) {
-				if(age <10) {
+				if(age <10) {}
 			}
 			
 		}else if(age < 30) {

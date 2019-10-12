@@ -6,7 +6,7 @@ public class CalculatorExecutor {
 
 	public static void main(String[] args) {
 		
-		Scanner sc = new Scanner(Sistem.in);
+		Scanner sc = new Scanner(System.in);
 		
 		System.out.println("First: ");
 		
