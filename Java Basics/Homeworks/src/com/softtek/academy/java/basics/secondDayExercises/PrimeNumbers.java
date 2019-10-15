@@ -33,19 +33,17 @@ public class PrimeNumbers {
 			
 			while(myIterator.hasNext()){
 				
-				
 				int elemento = myIterator.next();
 				
-				if(i/2 >= elemento) {
+				if(i/2 <= elemento) {
 					
 					
 					
 				}else {
+					
 					break;
 				}
 				
-				
-				System.out.print(elemento+" / ");
 			}
 			
 				
