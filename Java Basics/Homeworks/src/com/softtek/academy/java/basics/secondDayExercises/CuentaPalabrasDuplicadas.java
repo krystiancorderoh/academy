@@ -22,16 +22,12 @@ public class CuentaPalabrasDuplicadas {
 			
 			contador = 0;
 			for (int i=j+1;i < arreglo.length;i++) {
-				System.out.println(arreglo[j]+"|"+arreglo[i]);
 				
-				temp1 = arreglo[j];
-				temp2 = arreglo[i];
+				if(arreglo[j].equals(arreglo[i]) && !arreglo[j].equals("")) {
 				
-				//if(arreglo[j] == arreglo[i]) {
-				if(temp1 == temp2) {
-					System.out.println(contador);
 					contador++;
-					System.out.println(contador);
+					
+					arreglo[i]="";
 				}
 				
 			}
