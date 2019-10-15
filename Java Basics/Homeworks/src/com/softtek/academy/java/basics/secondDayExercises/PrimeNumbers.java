@@ -15,17 +15,17 @@ public class PrimeNumbers {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		int cont = 0;
+		System.out.println("How many prime numbers do you want? ");
+		
+		int num = Integer.parseInt(sc.nextLine());
 		
 		ArrayList<Integer> primos = new ArrayList<Integer>();
 		
 		primos.add(2); 
 		
-		System.out.println("How many prime numbers do you want? ");
-		
-		int num = Integer.parseInt(sc.nextLine());
-		
 		Iterator<Integer> myIterator;
+		
+		boolean bandera = false;
 		
 		for (int i =3; i<1000; i++) {
 			
@@ -33,26 +33,30 @@ public class PrimeNumbers {
 			
 			while(myIterator.hasNext()){
 				
-				int elemento = myIterator.next();
+				int primo = myIterator.next();
 				
-				if(i/2 <= elemento) {
-					
-					
-					
-				}else {
+				if(primo > i/2) {
 					
 					break;
 				}
-				
+				if( i % primo == 0) {
+					
+					bandera = true;
+				}
 			}
-			
-				
+			if (!bandera) {
+				primos.add(i);
+			}
+			bandera = false;
+			if (primos.size() == num) {
+				break;
+			}
 		}
-			
-
-		
-		
-
+		myIterator = primos.iterator();
+		while(myIterator.hasNext()){
+			int elemento = myIterator.next();
+			System.out.print(elemento+" / ");
+		}
 	}
 
 }
