@@ -13,7 +13,7 @@ public class LeerArchivoExcel {
 	public static void main(String[] args) {
 		String nombreArchivo = "test1.xlsx";
 		String rutaArchivo = "C:\\Archivos-Excel\\" + nombreArchivo;
-		String hoja = "Hoja1";
+		//String hoja = "Hoja1";
  
 		try (FileInputStream file = new FileInputStream(new File(rutaArchivo))) {
 			// leer archivo excel
