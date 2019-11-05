@@ -1,5 +1,6 @@
 package com.softtek.javaacademy.bestpractices.separatepakage;
 
+import java.util.Arrays;
 
 /**
  * 
@@ -57,19 +58,22 @@ public class UtilMathOperations {
     }
 	
 	/**
-	 * Contar numeros 
-	 * @param num 	numero que va en el tope de la piramide
+	 * Contar numeros diferentes en un arreglo
+	 * @param numeros	arreglo de numeros que se evaluara
 	 * @return true or false
 	 */
-	public int countArray(int[] arreglo) {
+	public int countArray(int[] numeros) {
 		
-		//time out, mañana le sigo
-		return 0;
+		int contador = 1;
 		
+		Arrays.sort(numeros);
+		
+		for(int i= 1; i<numeros.length; i++ ) {
+			if (numeros[i] != numeros[i-1]) {
+				contador++;
+			}
+		}
+		return contador;
 	}
 	
-	//TODO count the different numbers in an int array
-	
-	
-	//TODO addition, subtraction, multiplication and division that supports float numbers
 }
