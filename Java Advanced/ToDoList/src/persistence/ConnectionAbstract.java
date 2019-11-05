@@ -20,28 +20,29 @@ public abstract class ConnectionAbstract<T> {
 	}
 	protected void closeConnection() {
 		try {
-			if(this.conn != null) {
+			if(conn != null) {
 				
-				this.conn.close();
+				conn.close();
 			}
 		}catch (SQLException e) {
 			e.printStackTrace();
 		}
 	}
 	
-	protected abstract Set<T> findAll();
-	
+	protected abstract Set<T> getAll();
+
 	protected abstract void insert(T record);
 	
 	protected abstract void update(T record);
 	
 	protected abstract void delete(T record);
 	
-	
+	protected abstract void insertBach(Set<T> records);
 
-	protected Connection getConn() {
-		return conn;
+	public Connection getConnection() {
+		return this.conn;
 	}
+	
 
 	
 	

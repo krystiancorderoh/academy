@@ -6,6 +6,19 @@ public class User implements Comparable{
 	String name;
 	String email;
 	
+	public User() {}
+	
+	public User(String name, String email) {
+		this.name = name;
+		this.email = email;
+	}
+	
+	public User(int id, String name, String email) {
+		this.idUser = id;
+		this.name = name;
+		this.email = email;
+	}
+	
 	public int getIdUser() {
 		return idUser;
 	}
@@ -24,6 +37,20 @@ public class User implements Comparable{
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	
-	
+	@Override
+	public String toString() {
+		return this.getName();
+	}
+	public int compareTo(User usuario) {
+		return this.getIdUser() - usuario.getIdUser();
+	}
+
+	@Override
+	public int compareTo(Object o) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+
+
 }
