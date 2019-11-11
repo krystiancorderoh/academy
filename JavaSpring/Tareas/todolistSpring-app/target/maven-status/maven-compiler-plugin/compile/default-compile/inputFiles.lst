@@ -1,0 +1,17 @@
+C:\Users\MEL\Documents\Academia\Java-Web\todolist-app\src\main\java\com\softtek\academy\jstl\domain\model\User.java
+C:\Users\MEL\Documents\Academia\Java-Web\todolist-app\src\main\java\com\softtek\academy\jstl\dao\mapping\TaskToUserValDtoRowMapper.java
+C:\Users\MEL\Documents\Academia\Java-Web\todolist-app\src\main\java\com\softtek\academy\jstl\dao\AbstractDao.java
+C:\Users\MEL\Documents\Academia\Java-Web\todolist-app\src\main\java\com\softtek\academy\jstl\domain\model\Task.java
+C:\Users\MEL\Documents\Academia\Java-Web\todolist-app\src\main\java\com\softtek\academy\jstl\domain\dto\TaskToUserValDto.java
+C:\Users\MEL\Documents\Academia\Java-Web\todolist-app\src\main\java\com\softtek\academy\jstl\exception\InvalidInputException.java
+C:\Users\MEL\Documents\Academia\Java-Web\todolist-app\src\main\java\com\softtek\academy\jstl\domain\model\Priority.java
+C:\Users\MEL\Documents\Academia\Java-Web\todolist-app\src\main\java\com\softtek\academy\jstl\domain\model\State.java
+C:\Users\MEL\Documents\Academia\Java-Web\todolist-app\src\main\java\com\softtek\academy\jstl\web\mapping\EntityMapper.java
+C:\Users\MEL\Documents\Academia\Java-Web\todolist-app\src\main\java\com\softtek\academy\jstl\service\TaskService.java
+C:\Users\MEL\Documents\Academia\Java-Web\todolist-app\src\main\java\com\softtek\academy\jstl\domain\model\Status.java
+C:\Users\MEL\Documents\Academia\Java-Web\todolist-app\src\main\java\com\softtek\academy\jstl\dao\TaskToUserValDtoDao.java
+C:\Users\MEL\Documents\Academia\Java-Web\todolist-app\src\main\java\com\softtek\academy\jstl\dao\TaskDao.java
+C:\Users\MEL\Documents\Academia\Java-Web\todolist-app\src\main\java\com\softtek\academy\jstl\dao\mapping\TaskRowMapper.java
+C:\Users\MEL\Documents\Academia\Java-Web\todolist-app\src\main\java\com\softtek\academy\jstl\domain\model\TaskToUser.java
+C:\Users\MEL\Documents\Academia\Java-Web\todolist-app\src\main\java\com\softtek\academy\jstl\dao\mapping\RowMapper.java
+C:\Users\MEL\Documents\Academia\Java-Web\todolist-app\src\main\java\com\softtek\academy\jstl\service\TaskToUserValDtoService.java
