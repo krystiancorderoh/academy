@@ -43,3 +43,4 @@
 0:0:0:0:0:0:0:1 - - [15/Nov/2019:16:26:50 -0800] "GET /todolistSWS-app/tasks/1/assignments HTTP/1.1" 200 403 http-bio-8080-exec-2 1041
 0:0:0:0:0:0:0:1 - - [15/Nov/2019:16:29:51 -0800] "GET /todolistSWS-app/tasks/1/assignments HTTP/1.1" 200 403 http-bio-8080-exec-2 1126
 0:0:0:0:0:0:0:1 - - [15/Nov/2019:16:30:10 -0800] "POST /todolistSWS-app/tasks/1/assignments HTTP/1.1" 200 403 http-bio-8080-exec-3 136
+0:0:0:0:0:0:0:1 - - [15/Nov/2019:16:38:05 -0800] "POST /todolistSWS-app/tasks/1/assignments HTTP/1.1" 200 403 http-bio-8080-exec-2 1082

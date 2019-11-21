@@ -1,0 +1,10 @@
+0:0:0:0:0:0:0:1 - - [15/Nov/2019:17:41:43 -0800] "GET /jpa-app/cities HTTP/1.1" 500 456 http-bio-8080-exec-2 1062
+0:0:0:0:0:0:0:1 - - [15/Nov/2019:17:43:57 -0800] "GET /jpa-app/cities HTTP/1.1" 200 18654 http-bio-8080-exec-2 1393
+0:0:0:0:0:0:0:1 - - [15/Nov/2019:17:53:49 -0800] "GET /jpa-app/states HTTP/1.1" 200 1250 http-bio-8080-exec-5 20
+0:0:0:0:0:0:0:1 - - [15/Nov/2019:18:58:30 -0800] "GET /jpa-app/cities HTTP/1.1" 500 84 http-bio-8080-exec-2 236
+0:0:0:0:0:0:0:1 - - [15/Nov/2019:19:04:24 -0800] "GET /jpa-app/cities HTTP/1.1" 500 84 http-bio-8080-exec-2 300
+0:0:0:0:0:0:0:1 - - [15/Nov/2019:20:33:18 -0800] "GET /jpa-app/cities HTTP/1.1" 500 182 http-bio-8080-exec-2 897
+0:0:0:0:0:0:0:1 - - [15/Nov/2019:20:34:50 -0800] "GET /jpa-app/cities HTTP/1.1" 200 11337 http-bio-8080-exec-2 1065
+0:0:0:0:0:0:0:1 - - [15/Nov/2019:20:35:07 -0800] "GET /jpa-app/cities/1 HTTP/1.1" 200 - http-bio-8080-exec-3 25
+0:0:0:0:0:0:0:1 - - [15/Nov/2019:20:35:20 -0800] "GET /jpa-app/cities/ HTTP/1.1" 200 11337 http-bio-8080-exec-4 375
+0:0:0:0:0:0:0:1 - - [15/Nov/2019:20:53:53 -0800] "GET /jpa-app/states HTTP/1.1" 400 194 http-bio-8080-exec-2 755

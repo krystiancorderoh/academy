@@ -1,0 +1,31 @@
+package com.softtek.academy.jpa.repository.map;
+
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import org.springframework.context.annotation.Scope;
+import org.springframework.jdbc.core.RowMapper;
+import org.springframework.stereotype.Component;
+
+import com.softtek.academy.jpa.domain.model.CityEntity;
+import com.softtek.academy.jpa.domain.model.StateEntity;
+
+@Component
+@Scope("prototype")
+public class CityRowMapper implements RowMapper<CityEntity> {
+
+    @Override
+    public CityEntity mapRow(ResultSet rs, int rowNum) throws SQLException {
+        final StateEntity state = new StateEntity();
+        state.setId(rs.getLong("state_id"));
+        state.setDescription(rs.getString("state_description"));
+
+        final CityEntity city = new CityEntity();
+        city.setId(rs.getLong("id"));
+        city.setDescription(rs.getString("description"));
+        city.setState(state);
+
+        return city;
+    }
+
+}

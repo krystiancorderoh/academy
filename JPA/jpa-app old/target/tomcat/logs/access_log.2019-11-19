@@ -1,0 +1,11 @@
+0:0:0:0:0:0:0:1 - - [19/Nov/2019:12:26:38 -0800] "GET /jpa-app/states/ HTTP/1.1" 200 1250 http-bio-8080-exec-2 14247
+0:0:0:0:0:0:0:1 - - [19/Nov/2019:12:36:40 -0800] "GET /jpa-app/states?description=Aguascalientes HTTP/1.1" 500 226 http-bio-8080-exec-5 59
+0:0:0:0:0:0:0:1 - - [19/Nov/2019:13:07:54 -0800] "GET /jpa-app/states?page=2&size=20&descriptiondescription=Aguascalientes HTTP/1.1" 200 1250 http-bio-8080-exec-2 13626
+0:0:0:0:0:0:0:1 - - [19/Nov/2019:13:08:37 -0800] "GET /jpa-app/states?page=2&size=20&description=Aguascalientes HTTP/1.1" 500 226 http-bio-8080-exec-3 46
+0:0:0:0:0:0:0:1 - - [19/Nov/2019:13:51:12 -0800] "GET /jpa-app/states?page=2&size=20 HTTP/1.1" 200 1250 http-bio-8080-exec-2 14111
+0:0:0:0:0:0:0:1 - - [19/Nov/2019:17:34:45 -0800] "GET /jpa-app/states?page=2&size=20 HTTP/1.1" 200 1250 http-bio-8080-exec-5 10360
+0:0:0:0:0:0:0:1 - - [19/Nov/2019:17:58:55 -0800] "GET /jpa-app/cities/bajacalifornia HTTP/1.1" 400 292 http-bio-8080-exec-2 308
+0:0:0:0:0:0:0:1 - - [19/Nov/2019:17:59:05 -0800] "GET /jpa-app/cities/bajacalifornia HTTP/1.1" 400 292 http-bio-8080-exec-4 22
+0:0:0:0:0:0:0:1 - - [19/Nov/2019:18:00:00 -0800] "GET /jpa-app/cities/bajacalifornia HTTP/1.1" 500 410 http-bio-8080-exec-2 221
+0:0:0:0:0:0:0:1 - - [19/Nov/2019:18:04:49 -0800] "GET /jpa-app/cities/bajacalifornia HTTP/1.1" 200 - http-bio-8080-exec-2 102
+0:0:0:0:0:0:0:1 - - [19/Nov/2019:18:51:42 -0800] "GET /jpa-app/cities/bajacalifornia HTTP/1.1" 200 608 http-bio-8080-exec-2 11901
