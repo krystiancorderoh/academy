@@ -1,0 +1,12 @@
+{"properties": [
+  {
+    "name": "item.file.path",
+    "type": "java.lang.String",
+    "description": "A description for 'item.file.path'"
+  },
+  {
+    "name": "security.username",
+    "type": "java.lang.String",
+    "description": "A description for 'security.username'"
+  }
+]}

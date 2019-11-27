@@ -36,6 +36,8 @@ public class ItemService {
     public List<Item> getItemsByItemFilter (ItemFilter itemFilter){
     	return itemDao.findByItemFilter(itemFilter);
     }
+    
+    
     @Transactional(rollbackFor = Exception.class, transactionManager = "transactionManager")
     public void uploadFile(Long id, MultipartFile file) throws SQLException {
     	
