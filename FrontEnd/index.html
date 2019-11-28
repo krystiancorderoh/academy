@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Krystian Cordero</title> 
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+   <main class="container">
+       <div class="row">
+           
+           <h1>To Do List</h1>
+            <form class= "col s12" action="" name = "newTodoForm" onsubmit="addTodo(event)">
+                <div imput-field>
+                    <label for=""></label>
+                    <input type="text" name="todo-tile" id="todo-title" />
+                    <textarea plaseholder="description" class="todo-description" name="todo-description" id="todo-description"> </textarea>
+                    <input class="waves-effect waves-light btn" type="submit">
+                    
+                </div>
+                
+
+            </form>
+            <div id="root">
+
+
+
+            </div>
+           
+       </div>
+        
+   </main>
+    
+    
+    <script>
+        var todoList = [];
+        function addTodo(event){
+            
+            event.preventDefault();
+            
+            var newTodo = {
+                
+                title:document.newTodoForm['todo-title'].value,
+                description:document.newTodoForm['todo-description'].value
+                
+            }
+            todoList.push(newTodo);
+            document.newTodoForm.reset();
+            render();
+           
+            
+        }
+        
+        function render(){
+            
+            var template = `<lh> you have ${todoList.length} actions todo </lh>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Item Name</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                `;
+            for(let index = 0;index < todoList.length; index++){
+                
+                template+= `<tr>
+                                <td>${todoList[index].title}</td>
+                                <td>${todoList[index].description}</td>
+                                <td><a class="waves-effect waves-light btn" onclick="removeTodo(${index})">Borrar</a></td>
+                            </tr>
+                `;
+                
+            }
+            template+= `
+                    </tbody>
+                </table>`;
+            document.querySelector("#root").innerHTML=template;
+            
+        } 
+        
+        function removeTodo(index){
+            
+            todoList.splice(index,1);
+            render();
+           
+            
+        }
+        
+    
+    </script>
+    
+   
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            
+</body>
+</html>
