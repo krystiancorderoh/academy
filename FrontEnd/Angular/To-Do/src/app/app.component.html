@@ -1,0 +1,53 @@
+<main class="container">
+           
+  <h1 class="title">To Do List</h1>
+  <mat-card class="card-50">
+      <mat-card-content class="form-flex">
+        <form [formGroup]="newTodoForm" (ngSubmit)="addTodo(newTodoForm.value)">
+                
+              <mat-form-field class="example-full-width">
+                <input matInput placeholder="Title" formControlName="title" type="text" name="todo-tile" id="todo-title"/>
+              </mat-form-field> 
+
+              <mat-form-field class="example-full-width">
+                <textarea matInput placeholder="Description" formControlName="description" class="descriptiontodo-" name="todo-description" id="todo-description"> </textarea>
+                
+              </mat-form-field> 
+              <button type="submit" mat-button>Add</button>
+              
+        </form>
+      </mat-card-content>
+  </mat-card>
+ 
+   <mat-card class="card-50">
+      <mat-card-content class="form-flex">
+        <table class="todo-table" mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+          <!--- Note that these columns can be defined in any order.
+                The actual rendered columns are set as a property on the row definition" -->
+        
+          <!-- title Column -->
+          <ng-container matColumnDef="title">
+            <th mat-header-cell *matHeaderCellDef> Name </th>
+            <td mat-cell *matCellDef="let element"> {{element.title}} </td>
+          </ng-container>
+
+          <!-- description Column -->
+          <ng-container matColumnDef="description">
+            <th mat-header-cell *matHeaderCellDef> Description </th>
+            <td mat-cell *matCellDef="let element"> {{element.description}} </td>
+          </ng-container>
+
+          <!-- action Column -->
+          <ng-container matColumnDef="action">
+            <th mat-header-cell *matHeaderCellDef> Action </th>
+            <td mat-cell *matCellDef="let element;index as i"> <button mat-button color="warn" (click)="removeTodo(i)">Remove</button> </td>
+          </ng-container>
+          
+          <tr mat-header-row *matHeaderRowDef="columnsToDisplay"></tr> -->
+          <tr mat-row *matRowDef="let row; columns: columnsToDisplay;"></tr>
+        </table>
+      </mat-card-content>
+    </mat-card>
+  </main>
+
